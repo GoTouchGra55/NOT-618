@@ -29,6 +29,8 @@ The project focuses on reliability, serviceability, and my open-source loyalty w
 
 ![Vulcan-MK1 Routes](/Assets/PCB_Routes.png)
 
+For GERBER file see [Vulcan-MK1](PCB/production/Vulcan-MK1.zip)
+
 ## Schematics
 
 ![MCU](/Assets/MCU.png)
@@ -61,6 +63,62 @@ The project focuses on reliability, serviceability, and my open-source loyalty w
 1. Double-check polarity of capacitors and power input before powering the board. Otherwise you've made a fancy bomb :D
 2. Use a 24v 15A SMPS for optimal performance. NEVER go higher than this.
 
+## Flashing the Firmware
+
+### 1. Build the Firmware
+
+Compile Marlin using PlatformIO:
+
+```bash
+pio run -e STM32F407VE_black
+```
+
+After a successful build, the firmware will be located at:
+
+```
+.pio/build/STM32F407VE_black/firmware.bin
+```
+
+---
+
+### 2. Copy the Firmware
+
+1. Insert a microSD card (FAT32 formatted).
+2. Copy `firmware.bin` to the root directory of the SD card.
+
+The directory should look like:
+
+```
+/
+├── firmware.bin
+```
+
+### 3. Flash the Board
+
+1. Turn **off** the printer.
+2. Insert the microSD card into the onboard SD card slot.
+3. Power the board.
+
+The STM32 bootloader will automatically detect `firmware.bin` and begin flashing.
+
+Do **not** remove power during this process.
+
+---
+
+### 4. Verify the Flash
+
+After flashing is complete:
+
+- The board should boot into Marlin.
+- Connect to the USB serial port.
+- Send:
+
+```gcode
+M115
+```
+
+A successful response should report the installed Marlin version.
+
 ## Bill of Materials
 
 | Name                   | Purpose                         | Quantity | Total Cost (USD) | Distributor              |
@@ -74,7 +132,7 @@ The project focuses on reliability, serviceability, and my open-source loyalty w
 | Pitch Connectors       | For PCB                         |        1 |            $6.12 | Daraz Nepal              |
 | JST XH Connectors      | For PCB                         |        1 |            $5.11 | Daraz Nepal              |
 | 5015 24V Fan           | For cooling duct                |        1 |            $5.27 | Daraz Nepal              |
-| Screws                 | For securing connections        |        1 |           $20.82 | Daraz Nepal              |
+| Screws                 | For securing connections        |        1 |           $11.78 | Daraz Nepal              |
 | 24V Heated Bed         | For printer                     |        1 |           $19.78 | Daraz Nepal              |
 | PEI Sheet              | For printer                     |        1 |           $13.52 | Daraz Nepal              |
 | GT2 idler              | For movement                    |        8 |           $25.24 | Daraz Nepal              |
@@ -92,9 +150,11 @@ The project focuses on reliability, serviceability, and my open-source loyalty w
 | Threaded Rods          | For Z-axis movement             |        2 |            $7.54 | Daraz Nepal              |
 | GT2 pulley             | For steppers                    |        2 |            $1.57 | Daraz Nepal              |
 | Stepper Motors         | For movement                    |        4 |           $51.95 | Daraz Nepal              |
-| LM12UU Bearings        | For linear movement             |       12 |           $36.44 | Daraz Nepal              |
-| Linear Shaft (300mm)   | For linear movement             |        2 |           $32.59 | Daraz Nepal              |
-| Linear Shaft (350mm)   | For linear movement             |        4 |           $73.75 | Daraz Nepal              |
+| LM10UU Bearings        | For linear movement             |        8 |           $18.49 | Daraz Nepal              |
+| LM12UU Bearings        | For linear movement             |        4 |           $11.99 | Daraz Nepal              |
+| Linear Shaft (300mm)   | For linear movement (12mm)      |        4 |           $67.98 | Daraz Nepal              |
+| Linear Shaft (500mm)   | For linear movement (10mm)      |        2 |           $27.06 | Daraz Nepal              |
+| Linear Shaft (330mm)   | For linear movement (10mm)      |        2 |           $19.10 | Daraz Nepal              |
 | BLTouch                | For auto-bed leveling           |        1 |           $12.74 | Daraz Nepal              |
 | 2040 Extrusion         | For printer stability           |        1 |              $15 | Daraz Nepal              |
 | 2020 Extrusion (800mm) | Printer frame                   |        5 |          $117.08 | Daraz Nepal              |
@@ -103,8 +163,8 @@ The project focuses on reliability, serviceability, and my open-source loyalty w
 | 12864 LCD              | To display stuff                |        1 |           $35.39 | Daraz Nepal              |
 | 3-Way Connector        | To connect corners of extrusion |        8 |           $17.53 | Daraz Nepal              |
 | Vulcan-MK1 PCB         | To control printer              |        1 |          $166.65 | JLCPCB                   |
-| **Shipping**           |                                 |          |       **$27.32** | **Daraz Nepal & JLCPCB** |
-| **Total**              |                                 |          |      **$960.83** |                          |
+| **Shipping**           |                                 |          |       **$29.72** | **Daraz Nepal & JLCPCB** |
+| **Total**              |                                 |          |      **$959.57** |                          |
 
 ## License
 
