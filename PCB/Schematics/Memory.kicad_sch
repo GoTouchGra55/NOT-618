@@ -1981,7 +1981,7 @@
 				)
 			)
 		)
-		(property "Footprint" "SDSocket:microSD_HC_Molex_47219"
+		(property "Footprint" "Connector_Card:microSD_HC_Wuerth_693072010801"
 			(at 227.33 92.71 0)
 			(effects
 				(font

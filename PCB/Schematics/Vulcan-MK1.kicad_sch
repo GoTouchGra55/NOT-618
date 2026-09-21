@@ -6,8 +6,8 @@
 	(paper "A4")
 	(lib_symbols)
 	(sheet
-		(at 110.49 31.75)
-		(size 69.85 67.31)
+		(at 111.76 24.13)
+		(size 69.85 68.58)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
@@ -22,7 +22,7 @@
 		)
 		(uuid "084c2b7c-c464-4fd2-9b42-de606e976cef")
 		(property "Sheetname" "Drivers"
-			(at 110.49 31.0384 0)
+			(at 111.76 23.4184 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -31,7 +31,7 @@
 			)
 		)
 		(property "Sheetfile" "Drivers.kicad_sch"
-			(at 110.49 99.6446 0)
+			(at 111.76 93.2946 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -48,8 +48,8 @@
 		)
 	)
 	(sheet
-		(at 185.42 31.75)
-		(size 69.85 67.31)
+		(at 186.69 24.13)
+		(size 69.85 68.58)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
@@ -64,7 +64,7 @@
 		)
 		(uuid "5a102d5f-fd56-42c9-8a70-67a6d76f7046")
 		(property "Sheetname" "Memory"
-			(at 185.42 31.0384 0)
+			(at 186.69 23.4184 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -73,7 +73,7 @@
 			)
 		)
 		(property "Sheetfile" "Memory.kicad_sch"
-			(at 185.42 99.6446 0)
+			(at 186.69 93.2946 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -90,7 +90,7 @@
 		)
 	)
 	(sheet
-		(at 34.29 31.75)
+		(at 35.56 24.13)
 		(size 71.12 68.58)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -106,7 +106,7 @@
 		)
 		(uuid "686dd199-2329-4082-995b-ca8523bcf392")
 		(property "Sheetname" "MCU"
-			(at 34.29 31.0384 0)
+			(at 35.56 23.4184 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -115,7 +115,7 @@
 			)
 		)
 		(property "Sheetfile" "MCU.kicad_sch"
-			(at 34.29 100.9146 0)
+			(at 35.56 93.2946 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -132,8 +132,8 @@
 		)
 	)
 	(sheet
-		(at 34.29 105.41)
-		(size 71.12 64.77)
+		(at 35.56 97.79)
+		(size 109.22 64.77)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
@@ -148,7 +148,7 @@
 		)
 		(uuid "ae4e7e32-e84f-42ba-996a-957acd271e22")
 		(property "Sheetname" "POWER"
-			(at 34.29 104.6984 0)
+			(at 35.56 97.0784 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -157,7 +157,7 @@
 			)
 		)
 		(property "Sheetfile" "POWER.kicad_sch"
-			(at 34.29 170.7646 0)
+			(at 35.56 163.1446 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -174,8 +174,8 @@
 		)
 	)
 	(sheet
-		(at 110.49 105.41)
-		(size 69.85 64.77)
+		(at 149.86 97.79)
+		(size 106.68 64.77)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
@@ -190,7 +190,7 @@
 		)
 		(uuid "eb809290-bf6d-4359-8a23-864d1d93367b")
 		(property "Sheetname" "AUX"
-			(at 110.49 104.6984 0)
+			(at 149.86 97.0784 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -199,7 +199,7 @@
 			)
 		)
 		(property "Sheetfile" "AUX.kicad_sch"
-			(at 110.49 170.7646 0)
+			(at 149.86 163.1446 0)
 			(effects
 				(font
 					(size 1.27 1.27)

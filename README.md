@@ -162,9 +162,9 @@ A successful response should report the installed Marlin version.
 | TMC2209 drivers        | To drive motors                 |        5 |           $37.26 | Daraz Nepal              |
 | 12864 LCD              | To display stuff                |        1 |           $35.39 | Daraz Nepal              |
 | 3-Way Connector        | To connect corners of extrusion |        8 |           $17.53 | Daraz Nepal              |
-| Vulcan-MK1 PCB         | To control printer              |        1 |          $166.65 | JLCPCB                   |
+| Vulcan-MK1 PCB         | To control printer              |        1 |          $151.24 | JLCPCB                   |
 | **Shipping**           |                                 |          |       **$29.72** | **Daraz Nepal & JLCPCB** |
-| **Total**              |                                 |          |      **$959.57** |                          |
+| **Total**              |                                 |          |      **$944.16** |                          |
 
 ## License
 
